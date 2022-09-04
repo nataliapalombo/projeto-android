@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-idroid: 'idroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+     background-color: #EBE5C4;
+     font-family: var(--fonte-padrao); 
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, #2B9C5D, #28955A, #269056, #248B53, #24864F, #22804C, #207D4A, #1E7745, #1A7241, #1B6E40, #186A3D, #17663A, #146236, #125D33, #125A31, #11572F, #10532E, #0D512B);
+    min-height: 150px;
+    padding-top: 50px;
+}
+
+h1#principal {
+    font-family: var(--fonte-destaque);
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.526);
+    margin-bottom: 20px;
+}
+
+
+header > p {
+    font-family:var(--fonte-padrao);
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav {
+    background-image: linear-gradient(#0B4E28, #0A4A27, #064623, #074020, #063D1E, #063D1E, #063D1E);
+    padding: 10px;
+}
+
+nav > a { 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav > a:hover {
+    display: inline;
+    color:  #063D1E; 
+    background-color: #2FA664;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}   
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color:#064623;
+    margin: 0px -20px 0px -20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top:  5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main a {
+    color:#248B53;
+    background-color: #82E2AD;
+    font-weight: bold;
+    padding: 3px;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color:#063D1E
+}
+
+article > h1 {
+    font-family: var(--fonte-idroid);
+    font-size: 28px;
+    font-weight: bold;
+    color: #063D1E;
+    text-indent: 8px;
+    padding-bottom: 20px;
+}
+
+article > h2 {
+    font-family: var(--fonte-idroid);
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    color: #1A5C37;
+    text-align: left;
+    text-indent: 8px;
+    background-image: linear-gradient(45deg, #84E1AE, #87E2AF, #8CE3B2, #95E5B8, #90E3B5, #9EE6BE, #9BE6BB, #A3E8C1, #ABEAC5, #B5ECCD, #C1EFD4, #C9F2DA, #D3F4E0, #CFF3DF, #D8F6E5, #E1F8EA, #EAFAF0, #F0FBF5, #F8FDFA, #FEFEFE);
+}
+
+aside {
+    background-color: #82E2AD;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 5px 0px;
+    padding-bottom: 10px;
+}
+
+aside > h3 {
+    background-color: #195D36;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-indent: 8px;
+    padding: 10px;
+}
+
+aside > p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside > ul {
+    list-style-type: '\2714';
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+
+strong {
+    color:#1E7745;
+}
+
+
+footer {
+    background-color: #063D1E;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 4px;
+}
+
+footer a {
+    color: white;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
